@@ -40,7 +40,7 @@ Set Up for Ubuntu (dummy style)
 4.   Install Django (`sudo pip install Django`)
 5.   Install tiny mce (`sudo pip install django-tinymce`)
 6.   Install MySQL (`sudo apt-get install mysql-server`)
-7.   Install Python MySQL module (`sudo apt-get install python-mysqldb`)
+7.   Install Python MySQL module (`sudo apt-get install MySQL-python`)
 8.   Open the terminal and run the following 
      + `mysql -u root -p`
      + `mysql> CREATE DATABASE fafdb;`
