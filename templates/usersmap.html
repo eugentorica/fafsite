@@ -5,5 +5,23 @@
 {% endblock%}
 
 {% block content %}
-here will be map
+<div id="side_menu">
+  <ul class="side_nav people">
+    <li class='title'>Groups</li>
+    <ul class='subtitel'>
+      {% for group in groups %}
+        <li><a href="#{{ group }}/" data-group="{{ group }}">  {{ group }}</a></li>
+      {% endfor %}
+    </ul>
+  </ul>
+</div>
+<section id="articles" class="table_block">
+  <article>
+    <div class="article_body">
+      <div class="article_content">
+        here is map        
+      </div>
+    </div>
+  </article>
+</section>
 {% endblock %}

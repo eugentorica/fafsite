@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from shared import get_menu_items
+from academics.views import get_groups
+
 
 menu_items = get_menu_items()
 
@@ -26,5 +28,6 @@ def thankyou(request):
     return render(request, "credits.txt", content_type='text/plain')
 
 def usersmap(request):
+    groups = get_groups()
     return render(request, "usersmap.html", 
-        {"activepage": "Map", "menu": menu_items})
+        {"activepage": "Map", "menu": menu_items, "groups": groups})
