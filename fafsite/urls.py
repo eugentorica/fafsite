@@ -3,6 +3,7 @@ from views import *
 from academics.views import courses, about_course, professors, students, alumni
 from fafemail.views import contact_us, thanks, sorry
 from blog.views import achievements, activities
+from map.views import map, actual_map
 from django.conf import settings
 from django.contrib import admin
 
@@ -25,6 +26,8 @@ urlpatterns = patterns('',
     url(r'^contact-us/thanks/$', thanks),
     url(r'^contact-us/sorry/$', sorry),
     url(r'^thankyou/$', thankyou),
+	url(r'^actual_map/$', actual_map),
+	url(r'^map/$', map),
     url(r'^tinymce/', include('tinymce.urls')),
     # Admin panel and admin skin
     url(r'^grappelli/', include('grappelli.urls')),

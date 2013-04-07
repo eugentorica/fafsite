@@ -1,6 +1,7 @@
 from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 from django.db import models
+from map.models import Location
 import json
 
 META_TYPES = (
@@ -34,7 +35,7 @@ class User(models.Model):
     email = models.EmailField()
     group = models.CharField(blank=True, max_length=15)
     photo = models.ImageField(blank=True, upload_to="photos")
-
+    location = models.ForeignKey(Location)
     def __unicode__(self):
         return u'%s %s' % (self.name, self.surname)
 

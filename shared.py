@@ -7,6 +7,7 @@ def get_menu_items():
             ('/activities/', 'Activities'),
             ('/people/', 'People'),
             ('/courses/', 'Courses'),
+			('/map/','Map'),
             ('/contact-us/', 'Contact Us')
         ]
     return menu_items
