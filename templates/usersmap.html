@@ -1,10 +1,18 @@
 {% extends "index.html" %}
 
+
+
 {% block title%}
 <title>FAF - Map</title>
 {% endblock%}
 
 {% block content %}
+
+<!-- TODO include it using right way -->
+{% load staticfiles %}
+<script type="text/javascript" src="{% static "/static/js/map.js" %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
 <div id="side_menu">
   <ul class="side_nav people">
     <li class='title'>Groups</li>
@@ -19,7 +27,7 @@
   <article>
     <div class="article_body">
       <div class="article_content">
-        here is map        
+        <div id="map-canvas" style="width: 612px; height: 400px;"></div>
       </div>
     </div>
   </article>
