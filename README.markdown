@@ -18,7 +18,7 @@ In order to run the project follow the steps:
 3.   Download and set up [Django 1.4.1](https://www.djangoproject.com/download/)
 4.   Install [django-TinyMCE](https://github.com/aljosa/django-tinymce)
 5.   Instal MySQL
-6.   Install python-mysqldb
+6.   Install MySQL-python
 7.   Run the following
      + `mysql -u root -p`
      + `mysql> CREATE DATABASE fafdb;`
@@ -40,7 +40,7 @@ Set Up for Ubuntu (dummy style)
 4.   Install Django (`sudo pip install Django`)
 5.   Install tiny mce (`sudo pip install django-tinymce`)
 6.   Install MySQL (`sudo apt-get install mysql-server`)
-7.   Install Python MySQL module (`sudo apt-get install python-mysqldb`)
+7.   Install Python MySQL module (`sudo pip install MySQL-python`, probably will need to install python-dev package) 
 8.   Open the terminal and run the following 
      + `mysql -u root -p`
      + `mysql> CREATE DATABASE fafdb;`
