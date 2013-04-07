@@ -24,12 +24,14 @@ In order to run the project follow the steps:
      + `mysql> CREATE DATABASE fafdb;`
      + `mysql> GRANT ALL ON fafdb.* TO 'root'@'localhost' IDENTIFIED BY 'dev';`
      + `mysql> quit`
+     + `mysql -u root -pdev fafdb<fafdb_dump.sql`
 8.   Install [GIT](http://git-scm.com/), for windows there is GITHUB for Windows
 9.   Use GIT to clone fafsite project to your local directory 
 10.   Copy the contents from `fafsite/staging_settings.py` to a new locally created file `fafsite/settings.py`
 11.   cd to the project path and run the following `<python manage.py syncdb>`
 12.   Run the project from the console within the project directory `<python manage.py runserver>`
 13.   Now you can acces the server on the localhost
+14.   To access django admin console: access `http://localhost:8000/admin`. User:dev, Password:dev
 
 Set Up for Ubuntu (dummy style)
 -------------
