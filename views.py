@@ -24,3 +24,7 @@ def admission(request):
 
 def thankyou(request):
     return render(request, "credits.txt", content_type='text/plain')
+
+def usersmap(request):
+    return render(request, "usersmap.html", 
+        {"activepage": "Map", "menu": menu_items})
